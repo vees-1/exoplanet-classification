@@ -2,7 +2,7 @@
 
 This project utilizes machine learning to classify Exoplanet candidates identified by the Kepler Space Telescope. Using the XGBoost classifier, the model predicts whether a Kepler Object of Interest (KOI) is a "CONFIRMED" exoplanet, a "CANDIDATE", or a "FALSE POSITIVE" based on various astrophysical features.
 
-## 📌 Project Overview
+##  Project Overview
 
 The primary objective of this notebook is to build a robust classification model capable of distinguishing between real exoplanets and false positives. The project involves:
 * **Data Loading & Cleaning**: Handling the Kepler dataset.
@@ -11,7 +11,7 @@ The primary objective of this notebook is to build a robust classification model
 * **Model Training**: Implementing an XGBoost Classifier.
 * **Evaluation**: Assessing performance using classification reports and confusion matrices.
 
-## 📂 Dataset
+##  Dataset
 
 The dataset used is `kepler_data.csv`. It contains data collected by the Kepler Space Telescope, including properties such as:
 * `koi_disposition`: The target label (CONFIRMED, CANDIDATE, FALSE POSITIVE).
@@ -21,7 +21,7 @@ The dataset used is `kepler_data.csv`. It contains data collected by the Kepler 
 * `koi_insol`: Insolation flux.
 * And various error measurements and flags for false positive detection.
 
-## 🛠️ Technologies & Libraries
+##  Technologies & Libraries
 
 The analysis is performed using Python with the following major libraries:
 
@@ -31,7 +31,7 @@ The analysis is performed using Python with the following major libraries:
 * **XGBoost**: Gradient boosting framework for the classification model.
 * **IsolationForest**: Used for outlier detection.
 
-## 🚀 Installation & Usage
+##  Installation & Usage
 
 1.  **Clone the repository:**
     ```bash
@@ -51,7 +51,7 @@ The analysis is performed using Python with the following major libraries:
     jupyter notebook "Exoplanet_Classification_(xgboost).ipynb"
     ```
 
-## 📊 Methodology
+##  Methodology
 
 1.  **Data Ingestion**: The data is loaded using Pandas, filtering out comment lines.
 2.  **EDA**: 
@@ -63,12 +63,12 @@ The analysis is performed using Python with the following major libraries:
     * Training an **XGBoost Classifier**.
 5.  **Evaluation**: The model's performance is evaluated using precision, recall, F1-score, and accuracy metrics.
 
-## 📈 Results
+##  Results
 
 * The dataset typically shows a class imbalance, with a high number of "FALSE POSITIVE" results compared to "CONFIRMED" planets.
 * The XGBoost model provides feature importance scores, highlighting which physical properties (like orbital period or impact parameter) are most critical for classification.
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to fork this repository and submit pull requests.
 
